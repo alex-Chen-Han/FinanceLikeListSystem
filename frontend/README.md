@@ -87,8 +87,9 @@ FinanceLikeListSystem/
 
 ## 如何啟動執行
 
-### 1. 建立資料庫 (首要步驟)
+### 1. 建立資料庫 與 使用者
 請於SQL Server 介面內依序執行 `\DB\` 中的 `DDL(Schema).sql`、`DDL(Stored_Procedure).sql`、`DML(Data).sql` 指令碼，以完成建表與預存程序的佈署。
+請確認FinanceLikeListSystem資料庫已對應登入使用者(資料庫角色需要具備db_owner、public資格)。
 
 ### 2. 啟動後端服務 (Spring Boot)
 請執行[FinanceLikeListApplication.java](backend/src/main/java/com/finance/likelist/FinanceLikeListApplication.java)，啟動後端系統。
