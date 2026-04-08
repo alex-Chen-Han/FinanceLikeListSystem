@@ -96,7 +96,11 @@
               v-model.number="editedItem.purchaseQuantity"
               label="購買數量"
               type="number"
-              :rules="[v => v > 0 || '數量不能少於 1']"
+              :rules="[
+                v => v > 0 || '數量不能少於 1',
+                v => Number.isInteger(Number(v)) || '只能輸入整數'
+              ]"
+              step="1" 
               required
             ></v-text-field>
 
