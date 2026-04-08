@@ -29,7 +29,7 @@
 
 > **分層設計說明 (Spring Boot 架構)**：
 > - `Controller` (展示層介接)：封裝 RESTful API 以及通用回傳格式 `ApiResponse`。
-> - `Service` (業務層)：承放核心商業邏輯、手續費計算、阻斷邏輯、交易控制並封裝各層例外處理。
+> - `Service` (業務層)：負責核心商業邏輯、手續費計算、阻斷邏輯、交易控制並封裝各層例外處理。
 > - `Repository` (資料層)：以 Spring JDBC 與 `SimpleJdbcCall` 對接 SQL 預存程序 (Stored Procedures)。
 
 ---
