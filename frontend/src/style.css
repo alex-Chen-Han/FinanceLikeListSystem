@@ -1,0 +1,220 @@
+:root {
+  --esun-primary-green: #1eacad;
+  --esun-logout-dark: #007a8b;
+  --text: #333333;
+  --text-h: #1a1a1a;
+  --text-sub: #666666;
+  --bg-page: #f4f7f6;
+  --border-light: #eeeeee;
+  --shadow-light: rgba(0, 0, 0, 0.04) 0 2px 8px;
+  --sans: "Microsoft JhengHei", "微軟正黑體", system-ui, sans-serif;
+
+  font: 16px/160% var(--sans);
+  letter-spacing: 0.5px;
+  color: var(--text);
+  background: var(--bg-page);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-page);
+}
+
+h1 {
+  font-family: var(--sans);
+  font-weight: bold;
+  color: var(--esun-primary-green);
+  font-size: 36px !important;
+  margin: 30px 0 15px;
+  text-align: left;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-weight: bold;
+  color: var(--text-h);
+  font-size: 28px !important;
+  margin: 0 0 15px;
+}
+
+.text-sub {
+  color: var(--text-sub);
+  font-size: 14px !important;
+  margin-bottom: 25px;
+}
+
+.v-application {
+  background-color: var(--bg-page) !important;
+  font-size: 16px !important;
+}
+
+.v-app-bar.v-toolbar {
+  background-color: var(--esun-primary-green) !important;
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  height: 64px !important;
+}
+
+.v-app-bar .v-toolbar-title {
+  font-weight: bold !important;
+  color: white !important;
+  font-size: 32px !important;
+}
+
+.v-app-bar .v-btn {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.v-card {
+  border-radius: 8px !important;
+  border: 1px solid var(--border-light) !important;
+  box-shadow: var(--shadow-light) !important;
+  background-color: #ffffff !important;
+  padding: 10px !important;
+}
+
+.v-card-title {
+  background-color: #ffffff;
+  color: var(--esun-primary-green) !important;
+  font-weight: bold !important;
+  font-size: 28px !important;
+  padding: 16px !important;
+}
+
+.v-data-table__thead th {
+  background-color: #f8fbfb !important;
+  color: var(--text-h) !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  height: 60px !important;
+  border-bottom: 2px solid var(--esun-primary-green) !important;
+}
+
+.v-data-table tbody td {
+  font-size: 14px !important;
+  padding: 18px 12px !important;
+  color: var(--text) !important;
+}
+
+.v-data-table tbody tr:hover {
+  background-color: #f0f7f6 !important;
+}
+
+.v-field--focused .v-field__outline {
+  color: var(--esun-primary-green) !important;
+}
+
+.v-label {
+  color: var(--text-sub) !important;
+  font-size: 14px !important;
+}
+
+.v-field__input {
+  font-size: 16px !important;
+}
+
+.v-btn.bg-primary {
+  background-color: var(--esun-logout-dark) !important;
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  border-radius: 4px !important;
+  height: 42px !important;
+  padding: 0 20px !important;
+}
+
+.v-card-actions .v-btn:nth-last-child(2) {
+  background-color: var(--esun-primary-green) !important;
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  border-radius: 4px !important;
+  padding: 0 24px !important;
+}
+
+.v-card-actions .v-btn.bg-primary,
+.v-card-actions .v-btn:last-child {
+  background-color: var(--esun-primary-green) !important;
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  border-radius: 4px !important;
+  padding: 0 24px !important;
+  margin-left: 12px !important;
+}
+
+.v-card-actions .v-btn:hover {
+  filter: brightness(90%);
+}
+
+.v-btn.logout-btn {
+  border-radius: 20px !important;
+  font-size: 14px !important;
+}
+
+.status-block {
+  border-radius: 8px !important;
+  color: white !important;
+  padding: 24px;
+}
+
+.status-block h3 {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.status-block .status-number {
+  font-size: 48px !important;
+  font-weight: bold;
+}
+
+.v-card.block-todo {
+  background: linear-gradient(135deg, #3c85ab, #7bb6cf) !important;
+  border: none !important;
+}
+
+.v-card.block-info {
+  background: linear-gradient(135deg, #2eadae, #6bd3bf) !important;
+  border: none !important;
+}
+
+.v-card.block-announce {
+  background: linear-gradient(135deg, #2cacdc, #7bdaee) !important;
+  border: none !important;
+}
+
+.block-todo .v-card-title,
+.block-info .v-card-title,
+.block-announce .v-card-title {
+  color: white !important;
+}
+
+.v-container {
+  max-width: 1400px !important;
+}
+
+.esun-green-btn {
+  background-color: var(--esun-primary-green) !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+}
+
+.esun-green-btn:hover {
+  filter: brightness(90%);
+}
+
+.esun-cancel-btn {
+  background-color: var(--text-sub) !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+}
+
+.esun-cancel-btn:hover {
+  filter: brightness(90%);
+}
